@@ -1,0 +1,148 @@
+body{
+    background-color: #F9F9F9;
+    top: 0;
+    left: 0;
+    font-family: 'Poppins';
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    height: calc(100% - 60px); /* Full height minus header */
+    width: 250px;
+    background-color: #F2F2F2;
+    padding-top: 20px;
+    color: #050649;
+    padding-right: 8px;
+}
+
+/* Content styles */
+.content {
+    margin-left: 250px;
+    padding-top: 120px; /* Space for the header */
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #F9F9F9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: auto;
+        padding-top: 0;
+        display: none;
+
+    }
+
+    .content {
+        margin-left: 0;
+        padding-top: 120px; /* Adjust padding for header and sidebar */
+    }
+}
+.icon-badge {
+    position: relative;
+    display: inline-block;
+}
+.icon-badge .badge {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    font-size: 0.7rem;
+    padding: 3px 5px;
+    border-radius: 50%;
+}
+.active{
+    background-color: #B4D1FF;
+    border-radius: 4px;
+    
+}
+.position-fixed{
+    width:100%;
+    padding-right: 20px;
+}
+option{
+    background-color: #EBF6FE;
+    font-size: 0.75rem;
+}
+input{
+    font-size: 0.75rem !important;
+}
+select{
+    font-size: 0.75rem !important;
+}
+textarea{
+    font-size: 0.75rem !important;
+}
+.disapper{
+    display: none;
+}
+th{
+    font-size: 0.75rem;
+}
+td{
+    font-size: 0.75rem;
+    
+}
+.modal-body{
+    padding: 0;
+  }
+  .btn-close{
+    position: absolute;
+    right: 0;
+    padding: 1em;
+    width: 12px;
+    height: 12px;
+  }
+
+html {
+    font-size: 16px; 
+}
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px; 
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px; 
+    }
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}  
